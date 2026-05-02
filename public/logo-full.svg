@@ -1,0 +1,32 @@
+<svg width="820" height="220" viewBox="0 0 820 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="navy" x1="44" y1="80" x2="226" y2="160" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#142956"/>
+      <stop offset="1" stop-color="#1B224A"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="240" y1="80" x2="380" y2="160" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#148A8A"/>
+      <stop offset="1" stop-color="#1D6F67"/>
+    </linearGradient>
+    <linearGradient id="globe" x1="390" y1="30" x2="570" y2="200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#66A8E2"/>
+      <stop offset="0.4" stop-color="#2077C8"/>
+      <stop offset="1" stop-color="#14356B"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="465" y1="78" x2="710" y2="78" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E6B938"/>
+      <stop offset="1" stop-color="#FFD54F"/>
+    </linearGradient>
+  </defs>
+  <path d="M60 65C60 47 74 34 92 34H273L262 66H134C123 66 115 74 113 85L107 110C105 123 114 133 126 133H247L236 166H91C69 166 53 148 57 126L60 65Z" fill="url(#navy)"/>
+  <path d="M289 34H451L439 66H382L359 166H311L334 66H277L289 34Z" fill="url(#teal)"/>
+  <circle cx="498" cy="103" r="82" fill="url(#globe)"/>
+  <path d="M466 40C484 33 503 34 521 41C540 48 556 61 569 76C553 67 536 61 517 59C497 56 478 59 460 68C458 61 459 47 466 40Z" fill="#8EC2EE" fill-opacity="0.85"/>
+  <path d="M441 125C500 120 560 99 627 48H708C636 105 563 136 475 143C463 144 451 144 439 143L441 125Z" fill="url(#gold)"/>
+  <path d="M454 149C517 144 571 124 639 77L676 77C613 135 547 165 470 174L454 149Z" fill="#1A7AAB"/>
+  <path d="M430 176C486 176 540 159 606 119L633 119C579 168 518 196 448 200L430 176Z" fill="#16756F"/>
+  <path d="M521 60L540 73L548 53L521 60Z" fill="#14356B" fill-opacity="0.45"/>
+  <path d="M742 71.6V153H764.8V119.8H796.8V103.8H764.8V88.4H800V71.6H742Z" fill="#162655"/>
+  <path d="M606.8 71.6L573.6 153H597.2L604.4 135.2H637.2L644.2 153H668.6L635.6 71.6H606.8ZM610.8 119.4L620.8 93.6L630.8 119.4H610.8Z" fill="#162655"/>
+  <path d="M684.6 71.6V153H708.8V71.6H684.6Z" fill="#162655"/>
+</svg>

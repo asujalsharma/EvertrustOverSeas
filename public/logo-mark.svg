@@ -1,0 +1,18 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="globeMark" x1="44" y1="31" x2="171" y2="183" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#66A8E2"/>
+      <stop offset="0.4" stop-color="#2077C8"/>
+      <stop offset="1" stop-color="#14356B"/>
+    </linearGradient>
+    <linearGradient id="goldMark" x1="70" y1="76" x2="201" y2="76" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E6B938"/>
+      <stop offset="1" stop-color="#FFD54F"/>
+    </linearGradient>
+  </defs>
+  <circle cx="110" cy="110" r="86" fill="url(#globeMark)"/>
+  <path d="M72 45C90 38 109 39 127 46C146 53 162 66 175 81C159 72 142 66 123 64C103 61 84 64 66 73C64 66 65 52 72 45Z" fill="#8EC2EE" fill-opacity="0.85"/>
+  <path d="M40 132C99 127 159 106 179 83L204 83C160 120 101 150 40 151V132Z" fill="url(#goldMark)"/>
+  <path d="M55 157C105 151 145 136 188 103L198 103C160 142 114 171 63 180L55 157Z" fill="#1A7AAB"/>
+  <path d="M41 181C82 181 122 169 167 143L176 143C140 175 97 196 51 200L41 181Z" fill="#16756F"/>
+</svg>
