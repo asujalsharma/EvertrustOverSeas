@@ -8,7 +8,7 @@ export default function InquiryPage() {
       <PageHero
         eyebrow="Request a Quote"
         title="Share your sourcing requirement and let’s build the right export solution."
-        description="Use this inquiry form for bulk orders, private-label projects, OEM / ODM opportunities, and market-specific sourcing needs."
+        description="Use this inquiry form for bulk orders, private-label projects, and market-specific sourcing needs."
       />
       <section className="section-space">
         <div className="container-shell">

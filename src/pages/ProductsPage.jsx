@@ -1,5 +1,6 @@
 import CTASection from '../components/CTASection'
 import PageHero from '../components/PageHero'
+import { motion } from 'framer-motion'
 import ProductCard from '../components/ProductCard'
 import { Link } from 'react-router-dom'
 import { products } from '../data/siteData'
@@ -10,9 +11,9 @@ export default function ProductsPage() {
   const { data } = useTranslationContext()
   const activeProducts = data.products || products
   const customEyebrow = useTranslatedText('Need Something Else?')
-  const customTitle = useTranslatedText('We source many more products beyond the items listed here.')
+  const customTitle = useTranslatedText('We export many more products beyond the items listed here.')
   const customCopy = useTranslatedText(
-    'If the exact product you need is not shown in this catalog, you can still send us your requirement. We also support customized sourcing and additional export categories on request.',
+    'If the exact product you need is not shown in this catalog, you can still send us your requirement. We also support customized products export and additional export categories on request.',
   )
   const customButton = useTranslatedText('Request a Custom Product')
 
@@ -25,25 +26,33 @@ export default function ProductsPage() {
       />
       <section className="section-space">
         <div className="container-shell">
-          <div className="mb-10 overflow-hidden rounded-[34px] bg-[linear-gradient(135deg,#162655_0%,#1d6f67_55%,#2077c8_100%)] px-8 py-10 text-white shadow-soft sm:px-10">
-            <p className="eyebrow border-white/20 bg-white/10 text-white">{customEyebrow}</p>
-            <div className="mt-6 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-              <div className="max-w-3xl">
-                <h2 className="font-display text-4xl font-semibold sm:text-5xl">{customTitle}</h2>
-                <p className="mt-4 text-base leading-8 text-white/78">{customCopy}</p>
-              </div>
-              <Link
-                to="/inquiry"
-                className="inline-flex rounded-full bg-white px-6 py-3 text-sm font-semibold text-evergreen transition hover:bg-sand"
-              >
-                {customButton}
-              </Link>
-            </div>
-          </div>
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {activeProducts.map((product) => (
               <ProductCard key={product.slug} product={product} />
             ))}
+            <motion.article
+              className="card-panel relative flex flex-col items-center justify-center overflow-hidden border border-white/10 bg-evergreen p-8 text-center text-white"
+              initial={{ opacity: 0, y: 28 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
+              whileHover={{ y: -8 }}
+            >
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(230,185,56,0.15),transparent_40%)]" />
+              <div className="relative z-10 flex flex-col items-center">
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold">{customEyebrow}</p>
+                <h3 className="mt-4 font-display text-2xl font-semibold leading-tight">{customTitle}</h3>
+                <p className="mt-4 text-sm leading-7 text-white/78">
+                  {customCopy}
+                </p>
+                <Link
+                  to="/contact"
+                  className="mt-8 inline-flex rounded-full bg-white px-6 py-3 text-sm font-semibold text-evergreen shadow-lg transition hover:bg-gold hover:text-white"
+                >
+                  {customButton}
+                </Link>
+              </div>
+            </motion.article>
           </div>
         </div>
       </section>

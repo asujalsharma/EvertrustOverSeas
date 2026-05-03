@@ -5,7 +5,7 @@ export const siteMeta = {
   phone: '+91 9589741221',
   whatsapp: '919589741221',
   website: 'www.evertrustoverseas.com',
-  location: 'Gwalior, Madhya Pradesh, India',
+  location: 'Flat no. 430, Angel Heights, National Highway 44 Link Road, Hurawali, Gwalior, Madhya Pradesh, India ( PIN - 474006 )',
   founded: '2025',
   certification: 'ISO 9001:2015 (IAF) Certified',
 }
@@ -84,7 +84,7 @@ export const certifications = [
     issuer: 'Quality Control Certification',
     description:
       'Quality Management System certification issued to EverTrust Overseas for export of herbal and medicinal plants, fruits, vegetables, processed products, jaggery, cocoa-based products, cereals, pickles, papads, chutneys, guar gum, and floriculture products.',
-    meta: 'Certificate No. QCC/8D2D/0326 | Issued on 25 March 2026 | Valid until 24 March 2029',
+    // meta: 'Certificate No. QCC/8D2D/0326 | Issued on 25 March 2026 | Valid until 24 March 2029',
     image: '/certificates/iso-9001-2015.jpeg',
   },
   {
@@ -92,7 +92,7 @@ export const certifications = [
     issuer: 'Food Safety and Standards Authority of India',
     description:
       'Government of India food license issued to EverTrust Overseas covering trader, merchant, and exporter business activity at the registered Gwalior address.',
-    meta: 'License No. 11426999000187 | Issued on 24 March 2026 | Valid until 23 March 2027',
+    // meta: 'License No. 11426999000187 | Issued on 24 March 2026 | Valid until 23 March 2027',
     image: '/certificates/fssai-license.jpeg',
   },
   {
@@ -100,7 +100,7 @@ export const certifications = [
     issuer: 'Directorate General of Foreign Trade, Government of India',
     description:
       'Importer-Exporter Code certificate issued to EverTrust Overseas, establishing the business as an authorized export entity under DGFT records.',
-    meta: 'IEC: PARPS6156K | Date of issue: 09 January 2026 | Proprietorship concern',
+    // meta: 'IEC: PARPS6156K | Date of issue: 09 January 2026 | Proprietorship concern',
     image: '/certificates/importer-exporter-code.jpeg',
   },
   {
@@ -108,7 +108,7 @@ export const certifications = [
     issuer: 'APEDA - Agricultural and Processed Food Products Export Development Authority',
     description:
       'APEDA membership certificate for EverTrust Overseas covering herbal and medicinal plants, jaggery, and confectionery as a registered merchant exporter.',
-    meta: 'Registration No. RCMC/APEDA/28340/2026-2027 | Issued on 07 April 2026 | Valid until 06 April 2031',
+    // meta: 'Registration No. RCMC/APEDA/28340/2026-2027 | Issued on 07 April 2026 | Valid until 06 April 2031',
     image: '/certificates/apeda-rcmc.jpeg',
   },
 ]
@@ -134,72 +134,72 @@ export const testimonials = [
 export const products = [
   {
     slug: 'ashwagandha-powder',
-    name: 'Organic Ashwagandha Root Powder',
+    name: 'Ashwagandha Root Powder',
     category: 'Herbal Wellness',
-    shortDescription: 'Adaptogenic herbal powder suited for nutraceutical and wellness markets.',
+    shortDescription: 'High quality ashwagandha powder crafted for global wellness and nutraceutical markets.',
     description:
-      'Sourced for quality-focused buyers, our ashwagandha powder is positioned for herbal wellness, dietary supplement, and private-label opportunities with reliable export support.',
-    specs: ['Fine processed texture', 'Bulk and private-label options', 'Export-oriented sourcing'],
+      'EverTrust Overseas delivers premium grade ashwagandha root powder tailored for international buyers seeking consistency, purity, and dependable supply. Ideal for nutraceutical and herbal applications.',
+    specs: ['Fine processed texture', 'Bulk availability', 'Export grade quality standards'],
     image: '/products/ashwagandha-root-powder.jpeg',
   },
   {
     slug: 'psyllium-husk-isabgol',
     name: 'Psyllium Husk (Isabgol)',
     category: 'Digestive Fiber',
-    shortDescription: 'Premium psyllium husk for global food, wellness, and ingredient buyers.',
+    shortDescription: 'Premium psyllium husk for global food, wellness, and ingredient markets.',
     description:
-      'Psyllium husk from India remains a globally respected ingredient category. We support bulk procurement and tailored sourcing for importers seeking quality and consistency.',
-    specs: ['Suitable for bulk orders', 'Documentation-ready supply support', 'Consistent sourcing channel'],
+      'EverTrust Overseas provides high quality psyllium husk known for its purity and consistency. Ideal for international food brands, supplement companies, and ingredient distributors.',
+    specs: ['High purity standards', 'Bulk supply capability', 'Reliable global delivery'],
     image: '/products/psyllium-husk-isabgol.jpeg',
   },
   {
     slug: 'moringa-powder',
-    name: 'Organic Moringa Leaf Powder',
+    name: 'Moringa Leaf Powder',
     category: 'Superfood',
-    shortDescription: 'Nutrient-rich moringa powder for health, wellness, and functional food brands.',
+    shortDescription: 'Nutrient rich moringa powder for modern health and superfood markets.',
     description:
-      'Designed for premium export presentation, our moringa powder fits the growing superfood category and can be paired with OEM, ODM, and private-label support.',
-    specs: ['Superfood positioning', 'Flexible commercial models', 'Ideal for wellness portfolios'],
+      'EverTrust Overseas offers premium moringa leaf powder designed to meet the growing demand for superfoods. Suitable for wellness brands and functional food applications.',
+    specs: ['Rich nutritional profile', 'Consistent quality', 'Export-ready standards'],
     image: '/products/moringa-leaf-powder.jpeg',
   },
   {
     slug: 'indian-spices',
     name: 'Premium All Indian Spices Collection',
     category: 'Culinary Export',
-    shortDescription: 'Authentic spice sourcing for retailers, wholesalers, and food businesses.',
+    shortDescription: 'Authentic Indian spices delivered with premium export standards.',
     description:
-      'India’s spice heritage meets modern export presentation through curated sourcing, quality communication, and scalable trade support for international buyers.',
-    specs: ['Category-based sourcing', 'Global culinary relevance', 'Ideal for distributor channels'],
+      'EverTrust Overseas brings a curated range of Indian spices to global markets, combining authenticity with consistent quality and professional export execution.',
+    specs: ['Wide spice portfolio', 'Global culinary relevance', 'Scalable supply capability'],
     image: '/products/indian-spices-collection.jpeg',
   },
   {
-    slug: 'organic-jaggery',
-    name: 'Premium Organic Jaggery Collection',
+    slug: 'jaggery',
+    name: 'Premium Jaggery Collection',
     category: 'Natural Sweetener',
-    shortDescription: 'Traditional sweetener with clean-label appeal for modern global markets.',
+    shortDescription: 'Natural sweetener with clean label appeal for global food markets.',
     description:
-      'Organic jaggery serves buyers seeking natural sweetener alternatives with authentic Indian sourcing and dependable export coordination.',
-    specs: ['Natural product appeal', 'Suitable for food brands', 'Private-label capable'],
+      'EverTrust Overseas provides high quality jaggery suited for buyers seeking natural and traditional sweetener options with dependable export support.',
+    specs: ['Natural product appeal', 'Food grade quality', 'Bulk availability'],
     image: '/products/organic-jaggery-collection.jpeg',
   },
   {
     slug: 'sattu-flour',
     name: 'Premium Sattu Powder Collection',
     category: 'Traditional Nutrition',
-    shortDescription: 'Protein-forward traditional flour for ethnic and health-focused product lines.',
+    shortDescription: 'Protein rich traditional flour for health conscious and global markets.',
     description:
-      'Sattu flour offers differentiation for importers looking to bring India-origin nutrition products into retail or foodservice channels.',
-    specs: ['Distinctive Indian staple', 'Bulk sourcing support', 'Emerging health-food relevance'],
+      'EverTrust Overseas delivers premium sattu flour, offering a unique and nutritious product for international retail, wellness, and foodservice sectors.',
+    specs: ['High protein content', 'Distinctive Indian staple', 'Bulk export ready'],
     image: '/products/sattu-powder-collection.jpeg',
   },
   {
     slug: 'mustard-oil',
-    name: 'Premium Cold-Pressed Mustard Oil',
+    name: 'Premium Mustard Oil',
     category: 'Edible Oil',
-    shortDescription: 'Traditional cold-pressed oil with strong culinary and specialty-market appeal.',
+    shortDescription: 'Traditional mustard oil with strong culinary and specialty appeal.',
     description:
-      'For buyers focused on natural oils and regional authenticity, our cold-pressed mustard oil offering supports premium export positioning and brand-led opportunities.',
-    specs: ['Cold-pressed positioning', 'Specialty retail potential', 'Packaging flexibility available'],
+      'EverTrust Overseas offers premium mustard oil known for its authenticity, quality, and suitability for international specialty and retail markets.',
+    specs: ['Rich flavor profile', 'Flexible packaging options', 'Export quality assurance'],
     image: '/products/mustard-oil.jpeg',
   },
 ]

@@ -6,7 +6,7 @@ import SectionIntro from './SectionIntro'
 export default function HorizontalProductShowcase({ products }) {
   const sectionRef = useRef(null)
   const scrollRef = useRef(null)
-  const totalCards = products.length
+  const totalCards = products.length + 1
 
   const [scrollRange, setScrollRange] = useState(() => {
     if (typeof window !== 'undefined') {
@@ -123,6 +123,39 @@ export default function HorizontalProductShowcase({ products }) {
               </motion.div>
             </motion.article>
           ))}
+
+          {/* Custom Contact Card */}
+          <motion.article
+            className="group relative flex h-[70vh] min-h-[540px] w-[32rem] shrink-0 flex-col justify-center items-center overflow-hidden rounded-[34px] border border-white/20 bg-evergreen shadow-soft"
+            initial={{ opacity: 0.6, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ y: -14, scale: 1.015 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.7, delay: products.length * 0.05 }}
+          >
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(230,185,56,0.15),transparent_40%)]" />
+            <motion.div
+              className="relative z-10 flex flex-col items-center text-center p-8 text-white"
+              initial={{ opacity: 0.9, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ y: -6 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+            >
+              <h3 className="font-display text-4xl font-semibold">Looking for more?</h3>
+              <p className="mt-4 max-w-sm text-base leading-7 text-white/78">
+                If the product you need isn't listed, please reach out. We source many more products and can accommodate custom requirements.
+              </p>
+              <div className="mt-8">
+                <Link
+                  to="/contact"
+                  className="rounded-full bg-white px-8 py-4 text-sm font-semibold text-evergreen transition hover:bg-gold shadow-lg"
+                >
+                  Contact Us
+                </Link>
+              </div>
+            </motion.div>
+          </motion.article>
         </motion.div>
       </div>
     </section>
