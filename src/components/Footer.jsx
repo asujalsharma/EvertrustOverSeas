@@ -18,7 +18,7 @@ export default function Footer() {
   )
   const navTitle = useTranslatedText('Navigation')
   const contactTitle = useTranslatedText('Contact')
-  const partnerLabel = useTranslatedText('Premium Export Partner')
+  const partnerLabel = useTranslatedText('Trust, Carried Forward')
   const whatsappLabel = useTranslatedText('WhatsApp Chat')
 
   return (
@@ -50,7 +50,9 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-[0.22em] text-gold">{contactTitle}</h3>
             <div className="mt-5 space-y-3 text-white/78">
-              <p>{activeSiteMeta.location}</p>
+              <p>
+                Office Flat No. 430, Angel Heights, National Highway 44 Link Road, Hurawali, Gwalior, Madhya Pradesh, India (PIN - 474006)
+              </p>
               <a href={`mailto:${activeSiteMeta.email}`} className="block hover:text-white">
                 {activeSiteMeta.email}
               </a>

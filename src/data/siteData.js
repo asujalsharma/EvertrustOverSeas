@@ -5,7 +5,7 @@ export const siteMeta = {
   phone: '+91 9589741221',
   whatsapp: '919589741221',
   website: 'www.evertrustoverseas.com',
-  location: 'Flat no. 430, Angel Heights, National Highway 44 Link Road, Hurawali, Gwalior, Madhya Pradesh, India ( PIN - 474006 )',
+  location: 'Gwalior, Madhya Pradesh, India',
   founded: '2025',
   certification: 'ISO 9001:2015 (IAF) Certified',
 }

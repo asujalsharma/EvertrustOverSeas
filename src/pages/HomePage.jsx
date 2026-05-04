@@ -11,6 +11,8 @@ import ContactForm from '../components/ContactForm'
 import OceanScene from '../components/OceanScene'
 import { certifications, heroMetrics, products, services, siteMeta, testimonials, values } from '../data/siteData'
 import { useTranslationContext } from '../context/TranslationContext'
+import useTranslatedText from '../hooks/useTranslatedText'
+import { motion } from 'framer-motion'
 
 export default function HomePage() {
   const { data } = useTranslationContext()
@@ -21,6 +23,13 @@ export default function HomePage() {
   const activeServices = data.services || services
   const activeCertifications = data.certifications || certifications
   const activeTestimonials = data.testimonials || testimonials
+
+  const customEyebrow = useTranslatedText('Need Something Else?')
+  const customTitle = useTranslatedText('We export many more products beyond the items listed here.')
+  const customCopy = useTranslatedText(
+    'If the exact product you need is not shown in this catalog, you can still send us your requirement. We also support customized products export and additional export categories on request.',
+  )
+  const customButton = useTranslatedText('Request a Custom Product')
 
   return (
     <>
@@ -44,7 +53,7 @@ export default function HomePage() {
           <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <MotionSection>
               <div className="">
-                <p className="eyebrow border-white/20 bg-white/10 text-white">Trusted Indian Export Company</p>
+                <p className="eyebrow border-white/20 bg-white/10 text-white">Trust, Carried Forward</p>
                 <h1 className="mt-6 max-w-4xl font-display text-5xl font-semibold leading-tight text-white sm:text-6xl lg:text-7xl">
                   Your Trusted Export Partner for Premium Indian Products.
                 </h1>
@@ -124,6 +133,29 @@ export default function HomePage() {
             {activeProducts.map((product) => (
               <ProductCard key={product.slug} product={product} />
             ))}
+            <motion.article
+              className="card-panel relative flex flex-col items-center justify-center overflow-hidden border border-white/10 bg-evergreen p-8 text-center text-white"
+              initial={{ opacity: 0, y: 28 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
+              whileHover={{ y: -8 }}
+            >
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(230,185,56,0.15),transparent_40%)]" />
+              <div className="relative z-10 flex flex-col items-center">
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold">{customEyebrow}</p>
+                <h3 className="mt-4 font-display text-2xl font-semibold leading-tight">{customTitle}</h3>
+                <p className="mt-4 text-sm leading-7 text-white/78">
+                  {customCopy}
+                </p>
+                <Link
+                  to="/contact"
+                  className="mt-8 inline-flex rounded-full bg-white px-6 py-3 text-sm font-semibold text-evergreen shadow-lg transition hover:bg-gold hover:text-white"
+                >
+                  {customButton}
+                </Link>
+              </div>
+            </motion.article>
           </div>
         </div>
       </section>
