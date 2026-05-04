@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { languages, navLinks, siteMeta } from '../data/siteData'
 import { useTranslationContext } from '../context/TranslationContext'
+import LanguageSelector from './LanguageSelector'
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -39,18 +40,7 @@ export default function Header() {
           </nav>
 
           <div className="hidden items-center gap-4 lg:flex">
-            <select
-              value={language}
-              onChange={(event) => setLanguage(event.target.value)}
-              className="rounded-full border border-evergreen/15 bg-white px-4 py-2 text-sm text-evergreen outline-none"
-              aria-label="Select language"
-            >
-              {languages.map((item) => (
-                <option key={item.code} value={item.code}>
-                  {item.label}
-                </option>
-              ))}
-            </select>
+            <LanguageSelector language={language} setLanguage={setLanguage} />
             <Link to="/inquiry" className="btn-primary">
               {isTranslating ? 'Translating...' : 'Request a Quote'}
             </Link>
@@ -86,6 +76,9 @@ export default function Header() {
                   {link.label}
                 </NavLink>
               ))}
+              <div className="mt-2">
+                <LanguageSelector language={language} setLanguage={setLanguage} />
+              </div>
               <Link to="/inquiry" onClick={() => setMenuOpen(false)} className="btn-primary mt-2">
                 Request a Quote
               </Link>
