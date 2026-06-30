@@ -37,7 +37,7 @@ export default function HomePage() {
     "@type": "LocalBusiness",
     "name": "EverTrust Overseas",
     "image": "https://www.evertrustoverseas.com/logo-full-transparent.png",
-    "description": "EverTrust Overseas is a leading Indian exporter and sourcing partner for premium herbal wellness products, superfoods, spices, and bulk agricultural commodities.",
+    "description": "EverTrust Overseas is a leading Indian exporter and manufacturing partner for premium herbal wellness products, superfoods, spices, and bulk agricultural commodities.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Gwalior",
@@ -80,7 +80,7 @@ export default function HomePage() {
               <div className="">
                 <p className="eyebrow border-white/20 bg-white/10 text-white">Trust, Carried Forward</p>
                 <h1 className="mt-6 max-w-4xl font-display text-5xl font-semibold leading-tight text-white sm:text-6xl lg:text-7xl">
-                  Your Trusted Export Partner for Premium Indian Herbal Products & Sourcing.
+                  Your Trusted Export Partner for Premium Indian Herbal Products & Agricultural commodities.
                 </h1>
                 <p className="mt-6 max-w-2xl text-lg leading-8 text-white/60">
                   {activeSiteMeta.companyName} helps importers, distributors, and brands source high-value
@@ -129,7 +129,7 @@ export default function HomePage() {
             <SectionIntro
               eyebrow="Why EverTrust"
               title="A modern export partner built on integrity, discipline, and long-term business value."
-              copy="We bring a clear commercial mindset to global sourcing while preserving the warmth and accountability of a focused, responsive team."
+              copy="We bring a clear commercial mindset to global exports while preserving the warmth and accountability of a focused, responsive team."
             />
           </MotionSection>
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
@@ -191,7 +191,7 @@ export default function HomePage() {
             <SectionIntro
               eyebrow="Services"
               title="Flexible export services designed around how global buyers actually work."
-              copy="We support bulk purchasing, private-label growth, custom sourcing, and strategic distribution needs through a modular service model."
+              copy="We support bulk purchasing, private-label growth, custom products, and strategic distribution needs through a modular service model."
             />
           </MotionSection>
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -211,7 +211,7 @@ export default function HomePage() {
               <SectionIntro
                 eyebrow="Certification & Trust"
                 title="Built to strengthen buyer confidence from the first conversation."
-                copy="Our company profile, quality posture, and India-based sourcing advantage position us to serve serious buyers with professionalism."
+                copy="Our company profile, quality posture, and India-based exports advantage position us to serve serious buyers with professionalism."
               />
               <div className="grid grid-cols-2 gap-6 mt-8 space-y-5 w-full">
                 {activeCertifications.map((item) => (
@@ -239,7 +239,7 @@ export default function HomePage() {
             <MotionSection>
               <SectionIntro
                 eyebrow="Start the Conversation"
-                title="Tell us what you need and we’ll help shape the right sourcing path."
+                title="Tell us what you need and we’ll help shape the right path."
                 copy="Whether you need bulk quantities, private-label support, or a custom product strategy, we’re ready to discuss your goals."
               />
             </MotionSection>

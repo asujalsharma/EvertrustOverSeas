@@ -14,7 +14,7 @@ export default function AboutPage() {
     "@context": "https://schema.org",
     "@type": "AboutPage",
     "name": "About EverTrust Overseas",
-    "description": "EverTrust Overseas is an ISO 9001:2015 certified merchant exporter from India. Sourcing and exporting premium herbal wellness products, superfoods, spices, and agricultural commodities.",
+    "description": "EverTrust Overseas is an ISO 9001:2015 certified merchant exporter from India. Exporting premium herbal wellness products, superfoods, spices, agricultural commodities and Edible Oils Manufacturer .",
     "url": "https://www.evertrustoverseas.com/about"
   }
 
@@ -22,7 +22,7 @@ export default function AboutPage() {
     <>
       <SEO
         title="About Us | Herbal & Agricultural Exporter India | EverTrust Overseas"
-        description="Learn about EverTrust Overseas, an ISO 9001:2015 certified merchant exporter from India. Sourcing and exporting premium herbal ingredients, wellness plants, and agricultural commodities."
+        description="Learn about EverTrust Overseas, an ISO 9001:2015 certified merchant exporter from India. Exporting premium herbal ingredients, wellness plants, and agricultural commodities."
         keywords="about EverTrust Overseas, certified Indian exporter, herbal supplier credentials, sourcing company profile, organic exports India, Gwalior exporter"
         schema={schema}
       />
@@ -39,7 +39,7 @@ export default function AboutPage() {
               <SectionIntro
                 eyebrow="Company Profile"
                 title="We combine India’s product strength with a polished export mindset."
-                copy="Our mission is to create long-term value for global buyers through transparent communication, trustworthy sourcing, and premium product presentation."
+                copy="Our mission is to create long-term value for global buyers through transparent communication, trustworthy exporting partner, and premium product presentation."
               />
               <div className="mt-8 grid gap-5 sm:grid-cols-2">
                 <div className="card-panel p-6">

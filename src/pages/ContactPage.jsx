@@ -13,7 +13,7 @@ export default function ContactPage() {
     "@context": "https://schema.org",
     "@type": "ContactPage",
     "name": "Contact EverTrust Overseas",
-    "description": "Reach out to EverTrust Overseas for custom product sourcing, private label inquiries, and wholesale herbal/agricultural purchases.",
+    "description": "Reach out to EverTrust Overseas for custom products, private label inquiries, and wholesale herbal/agricultural purchases.",
     "url": "https://www.evertrustoverseas.com/contact"
   }
 
@@ -27,7 +27,7 @@ export default function ContactPage() {
       />
       <PageHero
         eyebrow="Contact Us"
-        title="Start a serious sourcing conversation with EverTrust Overseas."
+        title="Start a serious exporting conversation with EverTrust Overseas."
         description="Reach out for product discussions, private-label requirements, buyer partnerships, or export inquiries."
       />
       <section className="section-space">

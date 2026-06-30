@@ -31,13 +31,13 @@ export default function ProductsPage() {
       <SEO
         title="Bulk Export Catalog | Indian Herbs, Spices & Superfoods | EverTrust Overseas"
         description="Browse our bulk export catalog of premium Indian agricultural products, spices, herbal products, edible oils, and high-grade herbal powders like Ashwagandha, Moringa, and Beetroot powder."
-        keywords="herbal product catalog, bulk agricultural products, all agricultural products, herbal powders, Ashwagandha powder, moringa powder, Beetroot powder, alphonso mango powder, all types of herbal products, all types of herbal powders, mustard oil export, Indian spices wholesale, psyllium husk supplier, wholesale herbs sourcing"
+        keywords="herbal product catalog, bulk agricultural products, all agricultural products, herbal powders, Ashwagandha powder, moringa powder, Beetroot powder, alphonso mango powder, all types of herbal products, all types of herbal powders, mustard oil export, Indian spices wholesale, psyllium husk supplier, wholesale herbs exporting"
         schema={schema}
       />
       <PageHero
         eyebrow="Product Portfolio"
         title="A focused export catalog for wellness, food, herbal, and ingredient-driven markets."
-        description="Explore our modular product range built for wholesalers, private-label brands, distributors, and global sourcing teams."
+        description="Explore our modular product range built for wholesalers, private-label brands, distributors, and global exporting teams."
       />
       <section className="section-space">
         <div className="container-shell">

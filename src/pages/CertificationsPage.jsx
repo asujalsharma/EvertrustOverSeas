@@ -22,13 +22,13 @@ export default function CertificationsPage() {
       <SEO
         title="Export Certifications & Quality Standards | EverTrust Overseas"
         description="EverTrust Overseas is ISO 9001:2015 certified, FSSAI licensed, and APEDA registered. We maintain high standards of quality, transparency, and compliance for international trade."
-        keywords="ISO 9001:2015 exporter, FSSAI licensed exporter, APEDA registered supplier, Indian export credentials, quality assurance sourcing, herbal export compliance"
+        keywords="ISO 9001:2015 exporter, FSSAI licensed exporter, APEDA registered supplier, Indian export credentials, quality assurance exporting, herbal export compliance"
         schema={schema}
       />
       <PageHero
         eyebrow="Certifications"
         title="Quality signals that help international buyers move forward with confidence."
-        description="Our certifications and operating philosophy reinforce a premium, trustworthy brand identity for global sourcing conversations."
+        description="Our certifications and operating philosophy reinforce a premium, trustworthy brand identity for global exporting conversations."
       />
       <section className="section-space">
         <div className="container-shell">

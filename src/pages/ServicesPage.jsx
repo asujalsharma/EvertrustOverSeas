@@ -13,7 +13,7 @@ export default function ServicesPage() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Sourcing and Export Services",
+    "name": " and Export Services",
     "description": "EverTrust Overseas provides modular services including bulk agricultural supply, private label styling, and custom sourcing coordination.",
     "url": "https://www.evertrustoverseas.com/services"
   }
@@ -29,7 +29,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="Export Services"
         title="Commercial support that goes beyond supply and helps buyers scale with confidence."
-        description="Our services are structured to support product sourcing, branding opportunities, customized requirements, and long-term distribution collaboration."
+        description="Our services are structured to support product exports, branding opportunities, customized requirements, and long-term distribution collaboration."
       />
       <section className="section-space">
         <div className="container-shell">

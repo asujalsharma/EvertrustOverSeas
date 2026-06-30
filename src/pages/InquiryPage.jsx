@@ -8,7 +8,7 @@ export default function InquiryPage() {
     "@context": "https://schema.org",
     "@type": "ContactPage",
     "name": "Request a Quote",
-    "description": "Submit export inquiry for pricing and custom sourcing requirements from India.",
+    "description": "Submit export inquiry for pricing and custom products requirements from India.",
     "url": "https://www.evertrustoverseas.com/inquiry"
   }
 
@@ -22,8 +22,8 @@ export default function InquiryPage() {
       />
       <PageHero
         eyebrow="Request a Quote"
-        title="Share your sourcing requirement and let’s build the right export solution."
-        description="Use this inquiry form for bulk orders, private-label projects, and market-specific sourcing needs."
+        title="Share your requirement and let’s build the right export solution."
+        description="Use this inquiry form for bulk orders, private-label projects, and market-specific needs."
       />
       <section className="section-space">
         <div className="container-shell">
@@ -32,14 +32,14 @@ export default function InquiryPage() {
               <div className="card-panel p-7">
                 <h2 className="text-2xl font-semibold text-evergreen">What you can request</h2>
                 <p className="mt-4 text-sm leading-7 text-ink/68">
-                  Bulk product pricing, private-label opportunities, customized sourcing, packaging
+                  Bulk product pricing, private-label opportunities, customized products, packaging
                   preferences, and distribution partnerships.
                 </p>
               </div>
               <div className="card-panel p-7">
                 <h2 className="text-2xl font-semibold text-evergreen">Why buyers choose us</h2>
                 <p className="mt-4 text-sm leading-7 text-ink/68">
-                  We combine responsive communication, premium presentation, and trust-led sourcing
+                  We combine responsive communication, premium presentation, and trust-led export
                   support for serious import and export conversations.
                 </p>
               </div>

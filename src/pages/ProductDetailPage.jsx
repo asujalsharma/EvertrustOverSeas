@@ -30,9 +30,9 @@ export default function ProductDetailPage() {
     )
   }
 
-  const pageTitle = `Bulk ${product.name} Export & Sourcing | EverTrust Overseas`
+  const pageTitle = `Bulk ${product.name} Export & manufacturer | EverTrust Overseas`
   const pageDescription = `Source premium ${product.name} from India. EverTrust Overseas offers export-grade, bulk ${product.name} for global wellness, food, and nutraceutical brands.`
-  const pageKeywords = `${product.name} export, bulk ${product.name} sourcing, Indian ${product.name} supplier, wholesale ${product.name} India, ${product.category} exports, organic ${product.name}`
+  const pageKeywords = `${product.name} export, bulk ${product.name} exports, Indian ${product.name} supplier, wholesale ${product.name} India, ${product.category} exports, organic ${product.name}`
 
   const schema = {
     "@context": "https://schema.org",

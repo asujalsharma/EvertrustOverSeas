@@ -129,7 +129,7 @@ export const certifications = [
     issuer: "Quality Control Certification",
     description:
       "Quality Management System certification issued to EverTrust Overseas for export of herbal and medicinal plants, fruits, vegetables, processed products, jaggery, cocoa-based products, cereals, pickles, papads, chutneys, guar gum, and floriculture products.",
-    // meta: 'Certificate No. QCC/8D2D/0326 | Issued on 25 March 2026 | Valid until 24 March 2029',
+    meta: "Certificate No. QCC/8D2D/0326 | Issued on 25 March 2026 | Valid until 24 March 2029",
     image: "/certificates/iso-9001-2015.jpeg",
   },
   {
@@ -137,7 +137,7 @@ export const certifications = [
     issuer: "Food Safety and Standards Authority of India",
     description:
       "Government of India food license issued to EverTrust Overseas covering trader, merchant, and exporter business activity at the registered Gwalior address.",
-    // meta: 'License No. 11426999000187 | Issued on 24 March 2026 | Valid until 23 March 2027',
+    meta: "License No. 11426999000187 | Issued on 24 March 2026 | Valid until 23 March 2027",
     image: "/certificates/fssai-license.jpeg",
   },
   {
@@ -145,7 +145,7 @@ export const certifications = [
     issuer: "Directorate General of Foreign Trade, Government of India",
     description:
       "Importer-Exporter Code certificate issued to EverTrust Overseas, establishing the business as an authorized export entity under DGFT records.",
-    // meta: 'IEC: PARPS6156K | Date of issue: 09 January 2026 | Proprietorship concern',
+    meta: "IEC: PARPS6156K | Date of issue: 09 January 2026 | Proprietorship concern",
     image: "/certificates/importer-exporter-code.jpeg",
   },
   {
@@ -154,8 +154,24 @@ export const certifications = [
       "APEDA - Agricultural and Processed Food Products Export Development Authority",
     description:
       "APEDA membership certificate for EverTrust Overseas covering herbal and medicinal plants, jaggery, and confectionery as a registered merchant exporter.",
-    // meta: 'Registration No. RCMC/APEDA/28340/2026-2027 | Issued on 07 April 2026 | Valid until 06 April 2031',
+    meta: "Registration No. RCMC/APEDA/28340/2026-2027 | Issued on 07 April 2026 | Valid until 06 April 2031",
     image: "/certificates/apeda-rcmc.jpeg",
+  },
+  {
+    title: "Global G.A.P. Certification",
+    issuer: "International Certification & Inspection UK Ltd. (ICI UK)",
+    description:
+      "Global Good Agricultural Practice (GLOBAL G.A.P.) certification issued to EverTrust Overseas for the scope of Manufacturer of Ashwagandha powder, verifying compliance with international standards for safe and sustainable agriculture.",
+    meta: "Certificate No: ICI/1134793/26 | Issued on 08 May 2026 | Valid until 07 May 2029",
+    image: "/certificates/global-gap.jpg",
+  },
+  {
+    title: "Good Manufacturing Practice (GMP)",
+    issuer: "Learning Tech. Certification (LTC)",
+    description:
+      "Good Manufacturing Practice (GMP) certification verifying that the manufacture, processing, packaging, marketing, and supply of Ashwagandha powder, herbal powders, and herbal products comply with standard sanitary and process quality requirements.",
+    meta: "Certificate No: LT/GM07983M06/26 | Issued on 02 June 2026 | Valid until 01 June 2028",
+    image: "/certificates/gmp.jpg",
   },
 ];
 
@@ -283,34 +299,34 @@ export const products = [
     ],
     image: "/products/mustard-oil.jpeg",
   },
-  {
-    slug: "beetroot-powder",
-    name: "Premium Beetroot Powder",
-    category: "Herbal Wellness",
-    shortDescription: "Nutrient-rich beetroot powder for global food, beverage, and wellness industries.",
-    description:
-      "EverTrust Overseas supplies high-grade beetroot powder manufactured under strict quality controls. Ideal for natural food coloring, dietary supplements, and healthy beverage formulations.",
-    specs: [
-      "100% pure beetroot source",
-      "Excellent water solubility",
-      "Vibrant natural color",
-    ],
-    image: "/products/beetroot-powder.jpeg",
-  },
-  {
-    slug: "alphonso-mango-powder",
-    name: "Alphonso Mango Powder",
-    category: "Culinary Export",
-    shortDescription: "Premium spray-dried Alphonso mango powder for global food and beverage manufacturing.",
-    description:
-      "EverTrust Overseas offers authentic Alphonso mango powder capturing the rich flavor and aroma of premium Indian mangoes. Perfect for confectionery, beverage, and culinary applications.",
-    specs: [
-      "Made from real Alphonso mangoes",
-      "Spray-dried for premium shelf life",
-      "Natural sweetness and flavor",
-    ],
-    image: "/products/alphonso-mango-powder.jpeg",
-  },
+  // {
+  //   slug: "beetroot-powder",
+  //   name: "Premium Beetroot Powder",
+  //   category: "Herbal Wellness",
+  //   shortDescription: "Nutrient-rich beetroot powder for global food, beverage, and wellness industries.",
+  //   description:
+  //     "EverTrust Overseas supplies high-grade beetroot powder manufactured under strict quality controls. Ideal for natural food coloring, dietary supplements, and healthy beverage formulations.",
+  //   specs: [
+  //     "100% pure beetroot source",
+  //     "Excellent water solubility",
+  //     "Vibrant natural color",
+  //   ],
+  //   image: "/products/beetroot-powder.jpeg",
+  // },
+  // {
+  //   slug: "alphonso-mango-powder",
+  //   name: "Alphonso Mango Powder",
+  //   category: "Culinary Export",
+  //   shortDescription: "Premium spray-dried Alphonso mango powder for global food and beverage manufacturing.",
+  //   description:
+  //     "EverTrust Overseas offers authentic Alphonso mango powder capturing the rich flavor and aroma of premium Indian mangoes. Perfect for confectionery, beverage, and culinary applications.",
+  //   specs: [
+  //     "Made from real Alphonso mangoes",
+  //     "Spray-dried for premium shelf life",
+  //     "Natural sweetness and flavor",
+  //   ],
+  //   image: "/products/alphonso-mango-powder.jpeg",
+  // },
 ];
 
 export const faqs = [
