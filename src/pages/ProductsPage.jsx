@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import { products } from '../data/siteData'
 import { useTranslationContext } from '../context/TranslationContext'
 import useTranslatedText from '../hooks/useTranslatedText'
+import SEO from '../components/SEO'
 
 export default function ProductsPage() {
   const { data } = useTranslationContext()
@@ -17,8 +18,22 @@ export default function ProductsPage() {
   )
   const customButton = useTranslatedText('Request a Custom Product')
 
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "EverTrust Overseas Products",
+    "description": "Premium Indian exports including Ashwagandha, Moringa, Psyllium Husk, spices, organic jaggery, and sattu flour.",
+    "url": "https://www.evertrustoverseas.com/products"
+  }
+
   return (
     <>
+      <SEO
+        title="Bulk Export Catalog | Indian Herbs, Spices & Superfoods | EverTrust Overseas"
+        description="Browse our bulk export catalog of premium Indian agricultural products, spices, herbal products, edible oils, and high-grade herbal powders like Ashwagandha, Moringa, and Beetroot powder."
+        keywords="herbal product catalog, bulk agricultural products, all agricultural products, herbal powders, Ashwagandha powder, moringa powder, Beetroot powder, alphonso mango powder, all types of herbal products, all types of herbal powders, mustard oil export, Indian spices wholesale, psyllium husk supplier, wholesale herbs sourcing"
+        schema={schema}
+      />
       <PageHero
         eyebrow="Product Portfolio"
         title="A focused export catalog for wellness, food, herbal, and ingredient-driven markets."

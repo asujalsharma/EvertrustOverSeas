@@ -13,6 +13,7 @@ import { certifications, heroMetrics, products, services, siteMeta, testimonials
 import { useTranslationContext } from '../context/TranslationContext'
 import useTranslatedText from '../hooks/useTranslatedText'
 import { motion } from 'framer-motion'
+import SEO from '../components/SEO'
 
 export default function HomePage() {
   const { data } = useTranslationContext()
@@ -31,8 +32,32 @@ export default function HomePage() {
   )
   const customButton = useTranslatedText('Request a Custom Product')
 
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "EverTrust Overseas",
+    "image": "https://www.evertrustoverseas.com/logo-full-transparent.png",
+    "description": "EverTrust Overseas is a leading Indian exporter and sourcing partner for premium herbal wellness products, superfoods, spices, and bulk agricultural commodities.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Gwalior",
+      "addressRegion": "Madhya Pradesh",
+      "addressCountry": "India"
+    },
+    "url": "https://www.evertrustoverseas.com",
+    "telephone": "+91 9589741221",
+    "email": "info@evertrustoverseas.com",
+    "priceRange": "$$"
+  }
+
   return (
     <>
+      <SEO
+        title="EverTrust Overseas | Indian Herbal Products Export & Sourcing"
+        description="EverTrust Overseas is a leading Indian exporter and sourcing partner for premium agricultural commodities, herbal products, herbal powders (Ashwagandha, Moringa, Beetroot), fruit powders (Alphonso Mango), mustard oil, and spices in bulk."
+        keywords="herbal products export, herbal sourcing India, Indian herbal supplier, bulk herbs exporter, herbal powders, Ashwagandha powder, moringa powder, Beetroot powder, alphonso mango powder, all types of herbal products, all types of herbal powders, all agricultural products, mustard oil export, agricultural exports India, private label wellness products"
+        schema={schema}
+      />
       <section className="relative overflow-hidden pb-20 pt-16 sm:pb-24 sm:pt-20">
         <div className="absolute inset-0">
           <video
@@ -55,7 +80,7 @@ export default function HomePage() {
               <div className="">
                 <p className="eyebrow border-white/20 bg-white/10 text-white">Trust, Carried Forward</p>
                 <h1 className="mt-6 max-w-4xl font-display text-5xl font-semibold leading-tight text-white sm:text-6xl lg:text-7xl">
-                  Your Trusted Export Partner for Premium Indian Products.
+                  Your Trusted Export Partner for Premium Indian Herbal Products & Sourcing.
                 </h1>
                 <p className="mt-6 max-w-2xl text-lg leading-8 text-white/60">
                   {activeSiteMeta.companyName} helps importers, distributors, and brands source high-value

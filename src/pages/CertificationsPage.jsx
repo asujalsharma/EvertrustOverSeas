@@ -2,14 +2,29 @@ import CTASection from '../components/CTASection'
 import PageHero from '../components/PageHero'
 import { certifications, siteMeta } from '../data/siteData'
 import { useTranslationContext } from '../context/TranslationContext'
+import SEO from '../components/SEO'
 
 export default function CertificationsPage() {
   const { data } = useTranslationContext()
   const activeCertifications = data.certifications || certifications
   const activeSiteMeta = data.siteMeta || siteMeta
 
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Export Certifications and Quality Standards",
+    "description": "EverTrust Overseas is ISO 9001:2015 certified, FSSAI licensed, APEDA registered merchant exporter.",
+    "url": "https://www.evertrustoverseas.com/certifications"
+  }
+
   return (
     <>
+      <SEO
+        title="Export Certifications & Quality Standards | EverTrust Overseas"
+        description="EverTrust Overseas is ISO 9001:2015 certified, FSSAI licensed, and APEDA registered. We maintain high standards of quality, transparency, and compliance for international trade."
+        keywords="ISO 9001:2015 exporter, FSSAI licensed exporter, APEDA registered supplier, Indian export credentials, quality assurance sourcing, herbal export compliance"
+        schema={schema}
+      />
       <PageHero
         eyebrow="Certifications"
         title="Quality signals that help international buyers move forward with confidence."

@@ -3,14 +3,29 @@ import PageHero from '../components/PageHero'
 import SectionIntro from '../components/SectionIntro'
 import { siteMeta, values } from '../data/siteData'
 import { useTranslationContext } from '../context/TranslationContext'
+import SEO from '../components/SEO'
 
 export default function AboutPage() {
   const { data } = useTranslationContext()
   const activeSiteMeta = data.siteMeta || siteMeta
   const activeValues = data.values || values
 
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About EverTrust Overseas",
+    "description": "EverTrust Overseas is an ISO 9001:2015 certified merchant exporter from India. Sourcing and exporting premium herbal wellness products, superfoods, spices, and agricultural commodities.",
+    "url": "https://www.evertrustoverseas.com/about"
+  }
+
   return (
     <>
+      <SEO
+        title="About Us | Herbal & Agricultural Exporter India | EverTrust Overseas"
+        description="Learn about EverTrust Overseas, an ISO 9001:2015 certified merchant exporter from India. Sourcing and exporting premium herbal ingredients, wellness plants, and agricultural commodities."
+        keywords="about EverTrust Overseas, certified Indian exporter, herbal supplier credentials, sourcing company profile, organic exports India, Gwalior exporter"
+        schema={schema}
+      />
       <PageHero
         eyebrow="About EverTrust"
         title="An emerging Indian export company focused on premium service, ethical trade, and dependable relationships."

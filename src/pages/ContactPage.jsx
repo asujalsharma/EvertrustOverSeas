@@ -3,13 +3,28 @@ import CTASection from '../components/CTASection'
 import PageHero from '../components/PageHero'
 import { siteMeta } from '../data/siteData'
 import { useTranslationContext } from '../context/TranslationContext'
+import SEO from '../components/SEO'
 
 export default function ContactPage() {
   const { data } = useTranslationContext()
   const activeSiteMeta = data.siteMeta || siteMeta
 
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact EverTrust Overseas",
+    "description": "Reach out to EverTrust Overseas for custom product sourcing, private label inquiries, and wholesale herbal/agricultural purchases.",
+    "url": "https://www.evertrustoverseas.com/contact"
+  }
+
   return (
     <>
+      <SEO
+        title="Contact Us | Indian Exporter & Sourcing Agent | EverTrust Overseas"
+        description="Get in touch with EverTrust Overseas for wholesale pricing, custom herbal product sourcing, and export partnership inquiries."
+        keywords="contact Indian exporter, wholesale product inquiry, import from India, herbal sourcing contact, agricultural export partner, bulk herbs supplier contact"
+        schema={schema}
+      />
       <PageHero
         eyebrow="Contact Us"
         title="Start a serious sourcing conversation with EverTrust Overseas."

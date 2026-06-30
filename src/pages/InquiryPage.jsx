@@ -1,10 +1,25 @@
 import CTASection from '../components/CTASection'
 import InquiryForm from '../components/InquiryForm'
 import PageHero from '../components/PageHero'
+import SEO from '../components/SEO'
 
 export default function InquiryPage() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Request a Quote",
+    "description": "Submit export inquiry for pricing and custom sourcing requirements from India.",
+    "url": "https://www.evertrustoverseas.com/inquiry"
+  }
+
   return (
     <>
+      <SEO
+        title="Request Sourcing Quote & Export Inquiry | EverTrust Overseas"
+        description="Submit your bulk sourcing or private label inquiries for Indian herbal wellness, spices, organic sweeteners, and agricultural products."
+        keywords="request export quote, sourcing inquiry India, wholesale pricing request, bulk import quotation, herbal sourcing form"
+        schema={schema}
+      />
       <PageHero
         eyebrow="Request a Quote"
         title="Share your sourcing requirement and let’s build the right export solution."

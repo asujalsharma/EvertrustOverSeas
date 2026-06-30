@@ -3,6 +3,7 @@ import CTASection from '../components/CTASection'
 import { products } from '../data/siteData'
 import { useTranslationContext } from '../context/TranslationContext'
 import useTranslatedText from '../hooks/useTranslatedText'
+import SEO from '../components/SEO'
 
 export default function ProductDetailPage() {
   const { slug } = useParams()
@@ -29,8 +30,48 @@ export default function ProductDetailPage() {
     )
   }
 
+  const pageTitle = `Bulk ${product.name} Export & Sourcing | EverTrust Overseas`
+  const pageDescription = `Source premium ${product.name} from India. EverTrust Overseas offers export-grade, bulk ${product.name} for global wellness, food, and nutraceutical brands.`
+  const pageKeywords = `${product.name} export, bulk ${product.name} sourcing, Indian ${product.name} supplier, wholesale ${product.name} India, ${product.category} exports, organic ${product.name}`
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": product.name,
+    "image": product.image.startsWith('http') ? product.image : `https://www.evertrustoverseas.com${product.image}`,
+    "description": product.description,
+    "category": product.category,
+    "brand": {
+      "@type": "Brand",
+      "name": "EverTrust Overseas"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "price": "0.00",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "description": "Bulk export inquiry only"
+      },
+      "availability": "https://schema.org/InStock",
+      "url": `https://www.evertrustoverseas.com/products/${product.slug}`,
+      "seller": {
+        "@type": "Organization",
+        "name": "EverTrust Overseas"
+      }
+    }
+  }
+
   return (
     <>
+      <SEO
+        title={pageTitle}
+        description={pageDescription}
+        keywords={pageKeywords}
+        image={product.image}
+        schema={schema}
+        type="product"
+      />
       <section className="section-space">
         <div className="container-shell">
           <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">

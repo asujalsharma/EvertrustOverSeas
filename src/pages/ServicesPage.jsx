@@ -3,14 +3,29 @@ import PageHero from '../components/PageHero'
 import ServiceCard from '../components/ServiceCard'
 import { services, faqs } from '../data/siteData'
 import { useTranslationContext } from '../context/TranslationContext'
+import SEO from '../components/SEO'
 
 export default function ServicesPage() {
   const { data } = useTranslationContext()
   const activeServices = data.services || services
   const activeFaqs = data.faqs || faqs
 
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Sourcing and Export Services",
+    "description": "EverTrust Overseas provides modular services including bulk agricultural supply, private label styling, and custom sourcing coordination.",
+    "url": "https://www.evertrustoverseas.com/services"
+  }
+
   return (
     <>
+      <SEO
+        title="Export Sourcing, Bulk Supply & Private Labeling Services | EverTrust Overseas"
+        description="Discover our global export services including customizable sourcing, bulk agricultural supply, and private labeling (OEM/ODM) support for wellness brands and distributors."
+        keywords="herbal private labeling, custom sourcing India, bulk agricultural supply services, wholesale distributor services, export logistics partner, herb export logistics"
+        schema={schema}
+      />
       <PageHero
         eyebrow="Export Services"
         title="Commercial support that goes beyond supply and helps buyers scale with confidence."
